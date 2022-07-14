@@ -35,4 +35,8 @@
 	if (place_meeting(x, y + 1, Obj_wall) && key_jump) {
 		vspd -= 8
 	}
+	
+	if (keyboard_check_pressed(ord("R"))) {
+		game_restart()
+	}
 #endregion
